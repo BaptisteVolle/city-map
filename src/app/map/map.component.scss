@@ -1,0 +1,42 @@
+
+
+.map-frame {
+    border: 2px solid black;
+    height: 100%;
+}
+
+#map {
+   min-height: 600px;
+   width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    min-width: 800px;
+    align-self: end;
+    
+}
+
+.rangeInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+    
+}
+
+app-legend { 
+    border-left: 1px solid #ccc;
+    padding-left: 1rem;
+}
+
+.rangeInput {
+    width: 80%;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}   

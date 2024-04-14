@@ -1,0 +1,8 @@
+<div class="legend">
+    <h4>Legend</h4>
+    <ul>
+      <li *ngFor="let item of legendItems">
+        <img src="{{ item.icon }}" alt="{{ item.label }}" /> {{ item.label }}
+      </li>
+    </ul>
+  </div>

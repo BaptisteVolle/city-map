@@ -1,0 +1,23 @@
+<div class="container p-2 mt-3">
+   
+    <div class="menu-container">      
+        <div class="slider-container">
+            <h5 class="mb-4">Cities displayed: {{ getCitiesCount() }}</h5>
+            <div class="rangeInfo pt-3">
+                <h5>Min: 100,000</h5>
+                <h5>Current range: > {{ populationThreshold.toLocaleString() }}</h5>
+                <h5>Max: 10,000,000</h5>
+            </div>
+            <input type="range" class="form-range" id="populationRange" min="100000" max="10000000" [value]="populationThreshold" (input)="handleSliderChange($event)">
+        </div>
+        <app-legend></app-legend>
+    </div>
+    <div class="map-container">
+        <div class="map-frame">
+            <div id="map"></div>
+        </div>
+  </div>
+</div>
+
+
+  
